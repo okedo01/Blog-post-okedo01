@@ -1,26 +1,21 @@
-import { Link, Route, Routes } from "react-router-dom"
-import Home from "./Pages/NavBar/Home"
-import About from "./Pages/NavBar/About"
-import Contact from "./Pages/NavBar/Contact"
+import { Route, Routes } from "react-router-dom"
 import "./App.css"
+import Layout from "./Pages/Layout"
+import NavBar from "./NavBar"
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
 
 function App() {
 
   return (
     <div>
-    <nav className="nav-bar">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
+      <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Layout />} />
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   )

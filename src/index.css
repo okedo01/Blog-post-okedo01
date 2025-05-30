@@ -1,0 +1,20 @@
+:root {
+    --primary: hsl(0, 20%, 96%);
+    --secondary: hsl(0, 0%, 36%);
+    --tertiary: hsl(0, 2%, 80%);
+}
+
+.nav-links ul li{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0 20px;
+  padding: 12px 10px;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+.nav-links ul li a:hover {
+    color: var(--tertiary);
+}
