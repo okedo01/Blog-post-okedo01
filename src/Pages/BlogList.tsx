@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { posts } from "../Data";
 
-const Home = () => {
+const BlogList = () => {
   return (
     <div>
-     <ul>
+      <h1>Blog List</h1>
+      <ul>
         {posts.map((post) => (
           <li key={post.id}>
             <Link to={`/post/${post.id}`}>
@@ -14,7 +15,7 @@ const Home = () => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default BlogList;
