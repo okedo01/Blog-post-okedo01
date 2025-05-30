@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+
+:root {
+  --primary: hsl(0, 1%, 56%);
+  --secondary: ;
+  --tertiary: ;
+  --font: 16px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Ancizar Sans", sans-serif;
+  font-size: var(--font);
+  background-color: var(--primary);
+}
+
+.nav-bar {
+  background-color: hsl(0, 0%, 36%);
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0 10px;
+  padding: 12px 10px;
+}

@@ -7,8 +7,8 @@ import "./App.css"
 function App() {
 
   return (
-    <>
-    <nav>
+    <div>
+    <nav className="nav-bar">
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -22,7 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
