@@ -7,6 +7,7 @@ import BlogList from "./Pages/BlogList";
 import PostDetails from "./Pages/PostDetails";
 import AddPosts from "./Pages/AddPosts";
 import NotFound from "./Pages/NotFound";
+import Footer from "./Pages/Footer";
 import { useState } from "react";
 import type { Post } from "./Type";
 import { posts as initialPosts } from "./Data";
@@ -27,8 +28,9 @@ function App() {
         <Route path="post" element={<BlogList posts={posts}/>} />
         <Route path="post/:id" element={<PostDetails posts={posts}/>} />
         <Route path="add" element={<AddPosts onAddPost={handleAddPost}/>} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
-      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

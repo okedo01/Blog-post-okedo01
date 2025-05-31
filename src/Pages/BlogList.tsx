@@ -9,7 +9,7 @@ const BlogList = ({posts}: BlogListProps) => {
   return (
     <div>
       <h1>Blog List</h1>
-      <ul>
+      <ul className="wrapper">
         {posts.map((post) => (
           <li key={post.id}>
             <Link to={`/post/${post.id}`}>

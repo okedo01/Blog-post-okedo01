@@ -8,10 +8,10 @@ type HomeProps = {
 const Home = ({posts}: HomeProps) => {
   return (
     <div>
-     <ul>
+     <ul className="wrapper">
         {posts.map((post) => (
           <li key={post.id}>
-            <Link to={`/post/${post.id}`}>
+            <Link to={`/post/${post.id}`} className="posts">
               {post.id}. {post.title}
             </Link>
           </li>

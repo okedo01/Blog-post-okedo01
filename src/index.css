@@ -18,3 +18,16 @@
 .nav-links ul a:hover {
     color: var(--secondary);
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    height: 200px;
+    background-color: var(--tertiary);
+}
+.wrapper a{
+    text-decoration: none;
+}
