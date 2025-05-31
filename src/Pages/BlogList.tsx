@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
-import { posts } from "../Data";
+import type { Post } from "../Type";
 
-const BlogList = () => {
+type BlogListProps = {
+  posts: Post[];
+}
+
+const BlogList = ({posts}: BlogListProps) => {
   return (
     <div>
       <h1>Blog List</h1>

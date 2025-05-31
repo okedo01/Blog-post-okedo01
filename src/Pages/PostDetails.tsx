@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom";
-import { posts } from "../Data";
 import type { Post } from "../Type";
 
-const PostDetails = () => {
+type PostDetailsProps = {
+  posts: Post[];
+}
+
+const PostDetails = ({posts}: PostDetailsProps) => {
   const { id } = useParams<{ id: string }>();
   const postId = Number(id);
   const post: Post | undefined = posts.find((p) => p.id === postId);

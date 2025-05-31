@@ -1,6 +1,33 @@
-const AddPosts = () => {
+import { useState } from "react";
+import type { Post } from "../Type"
+import { useNavigate } from "react-router-dom";
+
+type addPostProps = {
+    onAddPost: (post: Post) => void;
+}
+
+const AddPosts = ({onAddPost}: addPostProps) => {
+    const [ title, setTitle ] = useState("")
+    const [ content, setContent ] = useState("")
+    const navigate = useNavigate()
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault()
+        const newPost: Post = {
+            id: Date.now(),
+            title,
+            content,
+        }
+        onAddPost(newPost)
+        navigate("/")
+    }
   return (
-    <div>AddPosts</div>
+    <div>
+        <form onSubmit={handleSubmit}>
+            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+            <textarea value={content} onChange={(e) => setContent(e.target.value)}></textarea>
+        </form>
+    </div>
   )
 }
 

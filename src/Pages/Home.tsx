@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
-import { posts } from "../Data";
+import type { Post } from "../Type";
 
-const Home = () => {
+type HomeProps = {
+  posts: Post[];
+}
+
+const Home = ({posts}: HomeProps) => {
   return (
     <div>
      <ul>

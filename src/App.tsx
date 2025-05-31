@@ -1,17 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Home from "./Pages/Home";
-import BlogList from "./Pages/BlogList";
-import PostDetails from "./Pages/PostDetails";
 import Layout from "./Pages/Layout";
+import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import { useState } from "react";
+import BlogList from "./Pages/BlogList";
+import PostDetails from "./Pages/PostDetails";
 import AddPosts from "./Pages/AddPosts";
+import NotFound from "./Pages/NotFound";
+import { useState } from "react";
 import type { Post } from "./Type";
+import { posts as initialPosts } from "./Data";
+import "./App.css";
 
 function App() {
-  const [ post, setPost ] = useState<Post[]>(initialPosts)
+  const [ posts, setPost ] = useState<Post[]>(initialPosts)
 
   const handleAddPost = (post: Post) => {
     setPost((prevPosts) => [...prevPosts, post])
@@ -19,13 +21,14 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route index element={<Home posts={posts}/>} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="post" element={<BlogList />} />
-        <Route path="post/:id" element={<PostDetails />} />
+        <Route path="post" element={<BlogList posts={posts}/>} />
+        <Route path="post/:id" element={<PostDetails posts={posts}/>} />
         <Route path="add" element={<AddPosts onAddPost={handleAddPost}/>} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
