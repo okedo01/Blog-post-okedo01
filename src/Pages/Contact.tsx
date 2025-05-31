@@ -13,9 +13,9 @@ const Contact = () => {
 
       <h3>📬 Reach Us At:</h3>
       <ul>
-        <li><strong>Email:</strong> roadmapblog@example.com</li>
-        <li><strong>Twitter:</strong> <a href="https://twitter.com/roadmapblog" target="_blank" rel="noopener noreferrer">@roadmapblog</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/roadmapblog" target="_blank" rel="noopener noreferrer">github.com/roadmapblog</a></li>
+        <li><strong>Email:</strong> eliahmwelangi01@gmail.com</li>
+        <li><strong>Twitter:</strong> <a href="#" target="_blank" rel="noopener noreferrer">@roadmapblog</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/okedo01/Blog-post-okedo01" target="_blank" rel="noopener noreferrer">github.com/roadmapblog</a></li>
       </ul>
 
       <p>

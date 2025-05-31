@@ -20,6 +20,7 @@ function App() {
     setPost((prevPosts) => [...prevPosts, post])
   }
   return (
+    <>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home posts={posts}/>} />
@@ -28,10 +29,11 @@ function App() {
         <Route path="post" element={<BlogList posts={posts}/>} />
         <Route path="post/:id" element={<PostDetails posts={posts}/>} />
         <Route path="add" element={<AddPosts onAddPost={handleAddPost}/>} />
-        <Route path="/footer" element={<Footer />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
+    <Footer />
+    </>
   );
 }
 
