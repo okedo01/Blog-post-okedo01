@@ -137,6 +137,10 @@ footer {
     .user-form button {
         width: 20%;
     }
+     footer {
+        position: static;
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -163,12 +167,13 @@ footer {
     }
     .about {
     padding: 10px 30px;
-    margin-bottom: 70px;
     }
     .about p {
         font-size: 14px;
     }
     footer {
-        top: 41em;
+        position: static;
+        margin-top: 15px;
+        font-size: 12px;
     }
 }
