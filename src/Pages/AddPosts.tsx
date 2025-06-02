@@ -1,7 +1,6 @@
 import { useState } from "react";
 import type { Post } from "../Type"
 import { useNavigate } from "react-router-dom";
-import { posts } from "../Data";
 
 type addPostProps = {
     onAddPost: (post: Post) => void;

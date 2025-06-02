@@ -45,6 +45,19 @@
     font-size: 18px;
 }
 
+.about {
+    padding: 20px 30px;
+    background-color: var(--tertiary);
+}
+.about h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--secondary);
+}
+.about p {
+    font-size: 18px;
+}
+
 .add {
     padding: 0 10px;
     color: var(--tertiary);

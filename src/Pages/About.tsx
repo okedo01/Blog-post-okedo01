@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div style={{ padding: "1rem" }}>
+    <div className="about">
       <h1>About This Blog</h1>
       <p>
         Welcome to <strong>CodePath Roadmap</strong> — your trusted guide on the journey to becoming a professional developer.
