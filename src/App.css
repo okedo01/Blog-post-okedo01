@@ -22,10 +22,3 @@ body {
   font-size: var(--font);
   background-color: var(--bg);
 }
-
-@media screen and (max-width: 340px) {
-  /* body {
-    max-width: 800px;
-    width: 100%;
-  } */
-}

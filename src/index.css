@@ -128,11 +128,30 @@ footer {
     font-size: 14px;
 }
 
-@media screen and (max-width: 375px) {
-    footer {
-    font-size: 12px;
-    margin-top: 20px;
+@media screen and (max-width: 850px) {
+    .user-form .title {
+        width: 30%;
+        padding: 7px;
+        font-size: 14px;
+    }
+    .user-form button {
+        width: 20%;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .user-form .title {
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+    }
+    .user-form .content {
+        width: 100%;
+    }
+
+    .user-form button {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 340px) {
