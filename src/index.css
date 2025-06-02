@@ -98,6 +98,18 @@
     cursor: pointer;
 }
 
+.details {
+    padding: 20px 30px;
+    background-color: var(--tertiary);
+}
+.details h3 {
+    font-size: 24px;
+}
+.details p {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
 .add {
     padding: 0 10px;
     color: var(--tertiary);

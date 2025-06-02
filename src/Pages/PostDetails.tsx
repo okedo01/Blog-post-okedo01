@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import type { Post } from "../Type";
+import "../index.css"
 
 type PostDetailsProps = {
   posts: Post[];
@@ -15,7 +16,7 @@ const PostDetails = ({posts}: PostDetailsProps) => {
   }
 
   return (
-    <div>
+    <div className="details">
       <h3>{post.title}</h3>
       <p>{post.content}</p>
     </div>
