@@ -32,6 +32,13 @@
     text-decoration: none;
 }
 
+.add {
+    padding: 0 10px;
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    text-decoration: none;
+}
+
 footer {
     display: flex;
     flex-direction: column;
