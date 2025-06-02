@@ -32,6 +32,19 @@
     text-decoration: none;
 }
 
+.contact {
+    padding: 20px 30px;
+    background-color: var(--tertiary);
+}
+.contact h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--secondary);
+}
+.contact p {
+    font-size: 18px;
+}
+
 .add {
     padding: 0 10px;
     color: var(--tertiary);

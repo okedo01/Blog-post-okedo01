@@ -13,11 +13,11 @@ const BlogList = ({posts}: BlogListProps) => {
             <h1>Blogs</h1>
             <ul className="wrapper">
               {posts.map((post) => (
-                <li key={post.id}>
+                <div key={post.id}>
                   <Link to={`/post/${post.id}`}>
-                    {post.title}
+                      {post.title} 
                   </Link>
-                </li>
+                </div>
               ))}
             </ul>
       </div>
