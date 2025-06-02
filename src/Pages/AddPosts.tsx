@@ -22,10 +22,10 @@ const AddPosts = ({onAddPost}: addPostProps) => {
         navigate("/")
     }
   return (
-    <div>
+    <div className="user-form">
         <form onSubmit={handleSubmit}>
-            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
-            <textarea value={content} onChange={(e) => setContent(e.target.value)}></textarea>
+            <input type="text" placeholder="Enter a title" value={title} onChange={(e) => setTitle(e.target.value)} className="title"/>
+            <textarea placeholder="Enter a content" value={content} onChange={(e) => setContent(e.target.value)} className="content"></textarea>
             <button type="submit">Add Post</button>
         </form>
     </div>

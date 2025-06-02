@@ -58,6 +58,46 @@
     font-size: 18px;
 }
 
+.user-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px 0;
+    padding: 20px 30px;
+    border-radius: 3px;
+    background-color: var(--tertiary);
+}
+.user-form .title {
+    width: 30%;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    color: var(--secondary);
+    outline: none;
+}
+.user-form .content {
+    width: 50%;
+    height: 120px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    color: var(--secondary);
+    outline: none;
+}
+.user-form button {
+    width: 10%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    color: var(--secondary);
+    outline: none;
+    cursor: pointer;
+}
+
 .add {
     padding: 0 10px;
     color: var(--tertiary);
