@@ -17,6 +17,7 @@ const Home = ({posts}: HomeProps) => {
           </li>
         ))}
       </ul>
+      <Link to="/add" className="add">Add post</Link>
     </div>
   )
 }

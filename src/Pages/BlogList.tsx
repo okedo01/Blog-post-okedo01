@@ -18,6 +18,7 @@ const BlogList = ({posts}: BlogListProps) => {
           </li>
         ))}
       </ul>
+      <Link to="/add" className="add">Add Post</Link>
     </div>
   );
 };
