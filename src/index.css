@@ -138,8 +138,7 @@ footer {
         width: 20%;
     }
      footer {
-        position: static;
-        margin-top: 15px;
+        top: 43.5em;
     }
 }
 
